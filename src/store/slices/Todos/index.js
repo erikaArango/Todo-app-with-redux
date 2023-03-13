@@ -3,9 +3,7 @@ import axios from "axios";
 
 export const todoSlice = createSlice({
     name: 'todos',
-    initialState: {
-        list: []
-    },
+    initialState: {list: [] },
     reducers: {
         setTodoList: (state,action) => {
             state.list = action.payload;
