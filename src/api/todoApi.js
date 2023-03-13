@@ -2,7 +2,7 @@ import {HttpClient} from './httpClient'
 
 // This is the API. The backend root URL can be set from here.
 
-const API = 'https://my-json-server.typicode.com/AlvaroArratia/static-todos-api'
+const API = 'https://my-json-server.typicode.com/AlvaroArratia/static-todos-api/todos'
 
 //Setting the todos URI
 

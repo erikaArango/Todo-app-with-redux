@@ -62,13 +62,10 @@ export function CreateTodoSuccess(todo){
 
 
 //Read
-export function GetTodos(){
-    return (dispactch, getState) => {
-        return TodoApi.getTodo().then(res => {
-            dispactch(GetTodoSuccess(res))
-        })
-    }
-}
+export const GetTodos = () =>  async (dispatch, getState) => {
+    const res = await TodoApi.getTodo()
+    dispatch(GetTodoSuccess(res))
+  }
 
 export function GetTodoSuccess(todos){
     return {
