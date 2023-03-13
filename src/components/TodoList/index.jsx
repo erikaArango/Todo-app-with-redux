@@ -3,6 +3,7 @@ import { fetchAllTodos } from "store/slices/Todos";
 import { useDispatch, useSelector } from "react-redux";
 import "./styles.css";
 import TodoListItem from "components/TodoListItem";
+import TodoForm from "components/TodoForm";
 
 const TodoList = () => {
 
@@ -32,6 +33,7 @@ const TodoList = () => {
       <span className="todo-list-title">Things to do:</span>
 
       <div className="todo-list-content">
+      <TodoForm/>
         <ul>
         {list.map((item) =>(
           <li key={item.id} >
