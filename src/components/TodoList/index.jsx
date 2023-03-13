@@ -3,6 +3,7 @@ import { fetchAllTodos } from "store/slices/Todos";
 import { useDispatch, useSelector } from "react-redux";
 import "./styles.css";
 import TodoListItem from "components/TodoListItem";
+import TodoForm from "components/TodoForm";
 
 const TodoList = () => {
 
@@ -20,7 +21,7 @@ const TodoList = () => {
 
 
   const handleDelete = (todoId) => {
-    // Fix an ability to delete task
+    // Fix an ability to delete task 
   };
 
   const toggleCheck = (todoId, isChecked) => {
@@ -30,7 +31,7 @@ const TodoList = () => {
   return (
     <div className="todo-list">
       <span className="todo-list-title">Things to do:</span>
-
+        <TodoForm/>
       <div className="todo-list-content">
         <ul>
         {list.map((item) =>(
